@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Form</title>
+		
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-3.1.1.js"></script>
+		<script src="ajax.js"></script>
+	</head>
+
+	<body>
+		<h1>Contact Form Registry</h1>
+		<p>Please fill in the contact form</p>
+		<form id="ajaxcontact" method="post" action="contactform.php">
+			<div class="field">
+				<label for="firstname">First name*:</label>
+				<input type="text" id="firstname" name="First name" required>
+			</div>
+	
+			<div class="field">
+				<label for="surnname">Surname*:</label>
+				<input type="text" id="surname" name="Surname" required>
+			</div>
+
+			<div class="field">
+				<label for="phonenumber">Phone Number*</label>
+				<input type="text" id="phonenumber" name="phonenumber" required>
+			</div>
+
+			<div class="field">
+				<label for="bday">Birthday*</label>
+				<input type="date" id="bday" name="bday" required>
+			</div>
+			
+			<div class="field">
+				<label for="address">Address</label>
+				<input type="text" id="address" name="address" >
+			</div>
+
+			<div class="field">
+				<button type="submit">Send</button> //value="submit"?
+			</div>
+		</form>
+		<div id="form-messages"></div>
+		<p>Fields marked with * are mandatory</p>
+	</body>
+</html>

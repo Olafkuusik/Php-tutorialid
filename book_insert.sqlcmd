@@ -1,0 +1,28 @@
+use books;
+
+insert into customers values
+	(3, "Sasha Valentine", "12, Gudvin street", "Pearl"),
+	(4, "Eva Legkaja", "34, Neznaika", "Sunny"),
+	(5, "Slava Morgunov", "56, Potter", "Hogvarts");
+	
+insert into orders values
+	(NULL, 3, 69.98, "2008-04-02"),
+	(NULL, 1, 49.99, "2008-04-15"),
+	(NULL, 2, 74.98, "2008-04-19"),
+	(NULL, 3, 24.99, "2008-05-01");
+
+insert into books values
+	("5-8459-0046-8", "Michel Morgan", "Java 2. Developer kit", 34.99),
+	("5-8459-1082-X", "Christopher Negus", "Linux", 24.99),
+	("5-8459-1134-6", "Marina Smolina", "Corel Draw X3", 24.99),
+	("5-8459-0426-9", "Rotheric Smith", "Webservices Linux", 49.99);
+	
+insert into order_items values
+(1, "5-8459-0046-8", 2),
+(2, "5-8459-0426-9", 1),
+(3, "5-8459-0426-9", 1),
+(3, "5-8459-1134-6", 1),
+(4, "5-8459-1082-X", 3);
+
+insert into book_reviews values
+	("5-8459-0046-8", "Morgans book is written really well and it helped me alot.");

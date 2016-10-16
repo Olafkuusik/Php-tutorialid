@@ -1,0 +1,23 @@
+<html>
+<head>
+ <title>Book shop - search by folder</title>
+</head>
+
+<body>
+	<h1>Book shop - search by folder</h1> 
+	<form action="results.php" method="post">
+		Please choose type of search:<br />
+		<select name="searchtype">
+			<option value="author">Search by author</option>
+			<option value="title">Search by title</option>
+			<option value="isbn">Search by ISBN</option>
+		</select>
+		<br />
+		Please insert seacrh text:<br />
+		<input type="text" name="searchterm" size="40" />
+		<br />
+		<input type="submit" name="submit" value="Search" />
+	</form>
+</body>
+</html>
+	
